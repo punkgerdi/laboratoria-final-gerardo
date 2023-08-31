@@ -1,17 +1,20 @@
-.navbar{
+.Navbar{
     display: flex;
-    background-color: black
-    height 80px;
+    background-color: black;
+    height: 80px;
     padding: 20px;
     position: 20px;
     top: 0;
     z-index: 1000;
 }
 
-.navbarItem{
+.NavbarItem{
     padding: 10px 20px;
     color: white;
     cursor: pointer;
     border-top: 4px solid transparent;
 }
 
+.selected {
+    border-color: #daa520;
+}

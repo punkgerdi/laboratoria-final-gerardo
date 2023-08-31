@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import styles from "./navbar.module.css";
+import styles from "./Navbar.module.css";
 
 function Navbar() {
     const [selectedItem, setSelectedItem] = useState("Inicio");
@@ -11,15 +11,17 @@ function Navbar() {
     
     };
     return(
-        <nav className={styles.navbar}> 
+        <nav className={styles.Navbar}> 
             <div 
-            className={styles.navbarItem + ` ${selectedItem === "Inicio" ? styles.selected : ""}`}
-            onClick={() => handleItemClick("Inicio")}>
+                className={styles.NavbarItem + ` ${selectedItem === "Inicio" ? styles.selected : ""}`}
+                onClick={() => handleItemClick("Inicio")}
+            >
                 <a href="#header">Inicio</a>
             </div>
             <div 
-            className={styles.navbarItem + ` ${selectedItem === "Habilidades" ? styles.selected : ""}`}
-            onClick={() => handleItemClick("Habilidades")}>
+                className={styles.NavbarItem + ` ${selectedItem === "Habilidades" ? styles.selected : ""}`}
+                onClick={() => handleItemClick("Habilidades")}
+            >
                 <a href= "#info">Habilidades</a>
             </div>
         </nav>
